@@ -4,7 +4,9 @@ import './Round.css';
 class Round extends Component {
   render() {
     return (
-      <div className="round" id="button0"></div>
+    <div>
+    <div className="round" id="button0"></div>
+    </div>
     );
   }
 }

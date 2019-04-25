@@ -1,7 +1,14 @@
 .round {
   width: 150px;
   height: 150px;
+  border-color: darkgrey;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 100%;
   background-color: grey;
   box-shadow: 10px 10px 5px grey;
+}
+
+.round:active {
+  box-shadow: inset 10px 10px 5px darkgrey;
 }

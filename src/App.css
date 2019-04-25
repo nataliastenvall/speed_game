@@ -1,5 +1,38 @@
 .allrounds {
   display: flex;
+  position: relative;
+  left: 25%;
+  top: auto;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+.bothbuttons {
+  display: flex;
+  position: relative;
+  left: 35%;
+  margin-top: 30px;
+}
+
+.start, .stop {
+  width: 150px;
+  height: 50px;
+  background-color: lightgrey;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.start:hover {
+  transform: scale(1.1);
+  color: green;
+}
+
+.stop:hover {
+  transform: scale(1.1);
+  color: red;
 }
 
 .App {
