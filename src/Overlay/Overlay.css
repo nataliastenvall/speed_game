@@ -1,0 +1,9 @@
+.textbox {
+  width: 500px;
+  height: 200px;
+  background-color: lightblue;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  background: linear-gradient(#e86465, #f0cb0d);
+}

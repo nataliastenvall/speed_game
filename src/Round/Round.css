@@ -5,10 +5,14 @@
   border-width: 1px;
   border-style: solid;
   border-radius: 100%;
-  background-color: grey;
-  box-shadow: 10px 10px 5px grey;
+  background-color: rgb(52, 198, 208);
+  box-shadow: 10px 10px 5px rgb(27, 11, 66);
 }
 
 .round:active {
-  box-shadow: inset 10px 10px 5px darkgrey;
+  box-shadow: inset 10px 10px 5px rgb(27, 11, 66);
+}
+
+div.round.active {
+  background-color: rgb(227, 87, 27);
 }

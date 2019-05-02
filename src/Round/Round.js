@@ -5,7 +5,7 @@ class Round extends Component {
   render() {
     return (
     <div>
-    <div className="round" id="button0"></div>
+    <div className={'round' + (this.props.active ? ' active' : '')} onClick={this.props.myclick}></div>
     </div>
     );
   }
