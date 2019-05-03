@@ -13,16 +13,32 @@ class App extends Component {
   state = {
 current: 0,
 score:0,
+moves:0,
 showOverlay: false
 };
 pace = 1500;
 timer = undefined;
 
+
 pickNext = () => {
+  if (this.state.moves >= 5){
+    this.gameOverHandler();
+    return;
+  }
+
   let nextActive = undefined;
+
   do {
     nextActive = getRndInteger(1,4);
   } while (nextActive === this.state.current);
+
+  this.setState(prevState => {
+    return {
+      moves:prevState.moves +1
+    };
+  });
+      console.log(this.state.moves);
+
   this.setState ({
   current:nextActive
   });
@@ -41,6 +57,10 @@ clickHandler =(btnId) => {
     this.gameOverHandler();
     return;
   }
+  this.setState({
+    moves:0
+  });
+  
   this.setState(prevState => {
     return {
       score:prevState.score +1
